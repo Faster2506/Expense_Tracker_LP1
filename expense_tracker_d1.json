@@ -1,0 +1,12 @@
+[
+    {
+        "Name": "food",
+        "Amount": 500.0,
+        "Category": "Zomato_Order"
+    },
+    {
+        "Name": "Perfume",
+        "Amount": 1000.0,
+        "Category": "Collection"
+    }
+]
