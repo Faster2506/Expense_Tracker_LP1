@@ -1,12 +1,14 @@
 [
     {
-        "Name": "food",
+        "Name": "zomato_order",
         "Amount": 500.0,
-        "Category": "Zomato_Order"
+        "Category": "Food",
+        "Date": "2026-05-31"
     },
     {
         "Name": "Perfume",
         "Amount": 1000.0,
-        "Category": "Collection"
+        "Category": "collection",
+        "Date": "2026-05-31"
     }
 ]
