@@ -1,4 +1,5 @@
 import json
+import csv
 from datetime import date
 
 try:
@@ -50,7 +51,12 @@ while True:
                 "6. 🔎 Search Any Expense\n"
                 "7. 🎯 Set Monthly Budget\n"
                 "8. 📊 View Monthly Budget\n"
-                "9. 🏃🏻Exit:\n"
+                "9. 🗓️ Monthly Expense Report\n"
+                "10.📈 Highest Expense\n"
+                "11.📉 Lowest Expense\n"
+                "12.✅ Sort Expense\n"
+                "13.📃 Export Expense to CSV\n"
+                "14.🏃🏻Exit:\n"
                 "Enter choices: "
     )
 
@@ -194,8 +200,117 @@ while True:
             print(f"💰 Remaining Budget : ₹{remaining_budget}")
         else:
             print(f"⚠️ Budget Exceeded By ₹{-remaining_budget}")
-            
+    
     elif choice == "9":
+        try:
+            month = input("Enter month (YYYY-MM): ")
+            monthly_total = 0
+            monthly_expense = 0
+            
+            print(f"\n🗓️ {month} Report")
+            print(f"\n📌 Expenses Included: ")
+            
+            for expense in Data:
+                if expense["Date"][0:7] == month:
+                    monthly_total += expense["Amount"]
+                    monthly_expense += 1
+                    
+                    print(f"• {expense["Name"]} - ₹{expense["Amount"]}")
+                    
+            if monthly_expense == 0:
+                print("❌ No expense found!!")
+                
+            else:
+                print(f"\n💰 Total Spending : ₹{monthly_total}")
+                print(f"🗓️ Total Expense  :  {monthly_expense}")
+                
+        except ValueError:
+            print("❌Enter  valid Date!!")
+    
+    elif choice == "10":
+        highest_expense = max(Data, key=lambda expense: expense["Amount"])
+        
+        print(f"🏆 Highest Expense ")
+        
+        print(f"👤 Name       : {highest_expense["Name"]}")
+        print(f"💰 Amount     : {highest_expense["Amount"]}")
+        print(f"🏷️ Category    : {highest_expense["Category"]}")
+        print(f"📆 Date       : {highest_expense["Date"]}")
+        
+    elif choice == "11":
+        lowest_expense = min(Data, key=lambda expense: expense["Amount"])
+        
+        print(f"📉 Lowest Expense ")
+        
+        print(f"👤 Name       : {lowest_expense["Name"]}")
+        print(f"💰 Amount     : {lowest_expense["Amount"]}")
+        print(f"🏷️ Category    : {lowest_expense["Category"]}")
+        print(f"📆 Date       : {lowest_expense["Date"]}")
+        
+    elif choice == "12":
+        print("\n1. HIGHEST TO LOWEST")
+        print("2. LOWEST TO HIGHEST")
+        
+        sort_choice = input("Enter choice:")
+        
+        if sort_choice == "1":
+            
+            sorted_expenses = sorted(
+                Data,
+                key = lambda expense: expense["Amount"],
+                reverse = True
+            )
+            
+        elif sort_choice == "2":
+            
+            sorted_expenses = sorted(
+                Data,
+                key=lambda expense: expense["Amount"]
+            )
+            
+        else:
+            print("❌ Invalid choice.")
+            continue
+        print("\n✅ Sorted Expenses\n")
+        
+        for expense in sorted_expenses:
+            
+            print(f"👤 Name     : {expense['Name']}")
+
+            print(f"💰 Amount   : ₹{expense['Amount']}")
+
+            print(f"🏷️ Category : {expense['Category']}")
+
+            print(f"📆 Date     : {expense['Date']}")
+
+            print("-----------------------------")
+        
+    elif choice == "13":
+        if not Data:
+            print("❌ No expenses to export.")
+            continue
+        
+        with open("expenses.csv", "w", newline="") as file:
+            
+            writer = csv.writer(file)
+            
+            writer.writerow(["Name", "Amount", "Category", "Date"])
+            
+            for expense in Data:
+                
+                writer.writerow([
+                expense["Name"],
+
+                expense["Amount"],
+
+                expense["Category"],
+
+                expense["Date"]
+                ])
+                
+        print("✅ Expenses exported to expense.csv successfully!")
+        
+    elif choice == "14":
 
         print("Goodbye....🤝🏻")
         break
