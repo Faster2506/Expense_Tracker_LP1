@@ -1,36 +1,80 @@
-<h1 align="center">💰 Expense Tracker</h1>
+# 💸 Expense Tracker
 
-<p align="center">
-  <b>My first project after completing 100 Days of Code 🚀</b>
-</p>
+A Python-based Expense Tracker that helps users manage expenses, track budgets, generate reports, and export data.
 
-<p align="center">
-  <img src="https://img.shields.io/badge/Python-Project-blue?style=for-the-badge&logo=python" />
-  <img src="https://img.shields.io/badge/Status-In%20Progress-orange?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/Learning-Building-green?style=for-the-badge" />
-</p>
+## 🚀 Features
 
----
+### Expense Management
+- ➕ Add Expenses
+- 👀 View Expenses
+- ✍️ Edit Expenses
+- 🔴 Delete Expenses
 
-# 📌 About
+### Reports & Analytics
+- 🔎 Search Expenses
+- 🗓️ Monthly Expense Reports
+- 📈 Highest Expense Finder
+- 📉 Lowest Expense Finder
+- 📊 Sort Expenses
 
-This project marks my transition from solving DSA problems to building real-world software.
+### Budget Tracking
+- 🎯 Set Monthly Budget
+- 💰 View Budget Status
+- ⚠️ Budget Exceeded Detection
 
-After successfully completing **100 Days of Code**, I decided to focus on creating projects, learning software development practices, and applying problem-solving skills to practical applications.
-
-This repository will be updated regularly as I continue improving the project and adding new features.
-
----
-
-# 🌐 Connect With Me
-
-Feel free to follow my journey and connect with me on LinkedIn.
-
-**LinkedIn:**  
-https://www.linkedin.com/in/md-owaish-raza-ansari-430734372/
+### Data Management
+- 📂 JSON Storage
+- 📄 Export Expenses to CSV
 
 ---
 
-<p align="center">
-  <i>Building one project at a time. Learning every day.</i>
-</p>
+## 🛠️ Technologies Used
+
+- Python
+- JSON
+- CSV
+- Git
+- GitHub
+
+---
+
+## 📁 Project Structure
+
+text Expense_Tracker/ │ ├── main.py ├── expense_tracker_d1.json ├── expense_budget.json ├── expenses.csv └── README.md 
+
+---
+
+## ▶️ How to Run
+
+bash git clone https://github.com/Faster0810/Python_Mini_Projects.git  cd Expense_Tracker_P1  python main.py 
+
+---
+
+## 📋 Menu Options
+
+text 1. Add Expense 2. View Expenses 3. Edit Expense 4. Delete Expense 5. Total Spending 6. Search Expense 7. Set Monthly Budget 8. View Monthly Budget 9. Monthly Expense Report 10. Highest Expense 11. Lowest Expense 12. Sort Expenses 13. Export Expenses to CSV 14. Exit 
+
+
+---
+
+## 📚 What I Learned
+
+- CRUD Operations
+- File Handling
+- JSON Management
+- CSV Export
+- Functions & Code Reusability
+- Searching & Sorting
+- Budget Tracking Logic
+- Git & GitHub Workflow
+
+---
+Expense_Tracker/
+│
+├── main.py
+├── expense_tracker_d1.json
+├── expense_budget.json
+├── expenses.csv
+└── README.md
+
+⭐ If you like this project, consider giving it a s
