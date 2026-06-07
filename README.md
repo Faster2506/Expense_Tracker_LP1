@@ -40,7 +40,12 @@ A Python-based Expense Tracker that helps users manage expenses, track budgets, 
 
 ## 📁 Project Structure
 
-text Expense_Tracker/ │ ├── main.py ├── expense_tracker_d1.json ├── expense_budget.json ├── expenses.csv └── README.md 
+text Expense_Tracker/
+├── main.py 
+├── expense_tracker_d1.json 
+├── expense_budget.json
+├── expenses.csv 
+└── README.md 
 
 ---
 
@@ -69,12 +74,5 @@ text 1. Add Expense 2. View Expenses 3. Edit Expense 4. Delete Expense 5. Total 
 - Git & GitHub Workflow
 
 ---
-Expense_Tracker/
-│
-├── main.py
-├── expense_tracker_d1.json
-├── expense_budget.json
-├── expenses.csv
-└── README.md
 
 ⭐ If you like this project, consider giving it a s
