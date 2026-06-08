@@ -1,30 +1,32 @@
 # 💸 ExpenseTracker Pro
-[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://pythonminiprojects-f9mbeaqdwiwhbbarfgfvyt.streamlit.app/)
+
+ Live Demo
+👉 https://pythonminiprojects-f9mbeaqdwiwhbbarfgfvyt.streamlit.app/
 
 A modern, high-end, interactive web dashboard built with Python and **Streamlit** to manage your personal finances. This application elevates the original command-line tracker into a visually stunning, premium analytics tool with real-time charts, inline spreadsheet editing, and detailed financial reports.
 
 ---
 
-## ✨ Features
+##  Features
 
-### 📊 Real-Time Financial Analytics
+###  Real-Time Financial Analytics
 *   **KPI Metrics Cards:** Instant view of Total Spending, Custom Monthly Budget, Remaining Budget (with color-coded alerts), and Transaction Counts.
 *   **Interactive Charts (Plotly):**
     *   *Category Breakdown:* High-end Donut Chart visualizing expense distribution.
     *   *Budget Utilization Gauge:* Real-time dial chart indicating how close you are to your spending limit.
     *   *Spending Trends:* Area chart showcasing daily/monthly expenses.
 
-### 📋 Full CRUD Database Editor
+### Full CRUD Database Editor
 *   **Inline Editing (`st.data_editor`):** Edit expense names, amounts, dates, or categories directly inside a spreadsheet-like grid.
 *   **Dynamic Deletion:** Select entries in the table and delete them with a single click.
 *   **Real-time Synchronization:** Edits are auto-saved back to the `expense_tracker_d1.json` database.
 
-### 📅 Advanced Reports & Filtering
+### Advanced Reports & Filtering
 *   **Monthly Report Generator:** Select any past month to view summarized expenses, transaction counts, and category reports.
 *   **Search & Sort Console:** Live search by name/category and instant sorting (Highest-to-Lowest, Lowest-to-Highest, and chronological order).
 *   **Extremes Highlight:** Highlights the single highest and lowest expense records in dedicated dashboard cards.
 
-### 📥 Data Management
+### Data Management
 *   **Persistent Storage:** Data is stored locally in clean JSON formats (`expense_tracker_d1.json`, `expense_budget.json`).
 *   **CSV Exporter:** Download your current filtered data as a CSV file with one click.
 
@@ -39,7 +41,7 @@ A modern, high-end, interactive web dashboard built with Python and **Streamlit*
 
 ---
 
-## 📁 Directory Structure
+## Directory Structure
 
 ```text
 Expense_Tracker_P1/
@@ -56,7 +58,7 @@ Expense_Tracker_P1/
 
 ---
 
-## ▶️ Running Locally
+## Running Locally
 
 Follow these steps to run the application on your computer:
 
@@ -85,7 +87,7 @@ This command will launch a local server and automatically open the application i
 
 ---
 
-## 🌐 Deploying to Streamlit Community Cloud
+## Deploying to Streamlit Community Cloud
 
 You can host this application online for free using **Streamlit Community Cloud** by following these steps:
 
