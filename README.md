@@ -1,4 +1,5 @@
 # 💸 ExpenseTracker Pro
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://pythonminiprojects-f9mbeaqdwiwhbbarfgfvyt.streamlit.app/)
 
 A modern, high-end, interactive web dashboard built with Python and **Streamlit** to manage your personal finances. This application elevates the original command-line tracker into a visually stunning, premium analytics tool with real-time charts, inline spreadsheet editing, and detailed financial reports.
 
