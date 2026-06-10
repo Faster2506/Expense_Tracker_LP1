@@ -54,7 +54,11 @@ This project helped me practice:
 
 ## 📂 Project Structure
 
-text Expense_Tracker_P1/ ├── main.py                 # Main application ├── expense_tracker_d1.json # Stores expense records ├── expense_budget.json     # Stores monthly budget ├── expenses.csv            # Exported CSV file └── README.md 
+text Expense_Tracker_P1/ ├── main.py                  # Main application 
+├── expense_tracker_d1.json # Stores expense records
+├── expense_budget.json     # Stores monthly budget
+├── expenses.csv            # Exported CSV file
+└── README.md 
 
 ---
 
