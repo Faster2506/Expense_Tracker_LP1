@@ -1,4 +1,4 @@
-# 💸 Expense Tracker
+# 💸 Basic Expense Tracker
 
 A command-line Expense Tracker built with Python to manage personal finances efficiently. This project helped me learn how real software is structured by implementing CRUD operations, file handling, data persistence, reporting, and data export features.
 
